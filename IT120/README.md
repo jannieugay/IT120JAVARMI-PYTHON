@@ -9,7 +9,7 @@ A Python translation of a Java RMI project using **Pyro5** (Python Remote Object
 | `client.py`  | `Client.java`                                     |
 
 ## How it works
-- `ServerImpl` is published on `localhost:9090` under the object id `product.server`
+- `ServerImpl` is published on `localhost:9080` under the object id `product.server`
   (the counterpart of binding a stub in the RMI registry).
 - `ProductImpl` objects are registered with the daemon and returned to the client
   as **remote references** (auto-proxies), like returning a `Remote` stub in Java.
